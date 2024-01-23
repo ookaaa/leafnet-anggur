@@ -4,12 +4,12 @@ body {
 }
 
 a {
-  color: #aac951;
+  color: #62366c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #aac951;
+  color: #62366c;
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #aac951;
+  color: #62366c;
   text-decoration: none;
 }
 
@@ -173,12 +173,12 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #aac951;
+  color: #62366c;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #aac951;
+  background: #62366c;
   color: #fff;
   padding: 10px 25px;
   margin-left: 30px;
@@ -188,7 +188,7 @@ h6,
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #aac951;
+  background: #62366c;
 }
 
 .navbar .dropdown ul {
@@ -223,7 +223,7 @@ h6,
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #aac951;
+  color: #62366c;
 }
 
 .navbar .dropdown:hover>ul {
@@ -321,7 +321,7 @@ h6,
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #aac951;
+  color: #62366c;
 }
 
 .navbar-mobile .getstarted,
@@ -356,7 +356,7 @@ h6,
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #aac951;
+  color: #62366c;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -399,11 +399,11 @@ h6,
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #aac951;
+  background: #62366c;
 }
 
 #hero .btn-get-started:hover {
-  background: #aac951;
+  background: #62366c;
 }
 
 #hero .animated {
@@ -489,7 +489,7 @@ section {
   padding-bottom: 0;
   line-height: 1px;
   margin-bottom: 15px;
-  color: #aac951;
+  color: #62366c;
 }
 
 .section-title p {
@@ -507,7 +507,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: #aac951;
+  background: #62366c;
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -617,14 +617,14 @@ section {
 
 .services .icon-box:hover {
   transform: translateY(-5px);
-  border-color: #aac951;
+  border-color: #62366c;
 }
 
 .services .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #aac951;
+  color: #62366c;
 }
 
 .services .title {
@@ -664,14 +664,14 @@ section {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #aac951;
+  font-family: #62366c;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   font-weight: 600;
   padding-left: 25px;
   cursor: pointer;
-  color: #aac951;
+  color: #62366c;
   transition: 0.3s;
 }
 
@@ -696,7 +696,7 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #aac951;
+  color: #62366c;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -788,7 +788,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #aac951;
+  color: #62366c;
 }
 
 .team .member .social i {
@@ -835,19 +835,19 @@ section {
   height: 12px;
   background-color: #E5D9B6;
   opacity: 1;
-  border: 1px solid #aac951;
+  border: 1px solid #62366c;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #aac951;
+  background-color: #62366c;
 }
 
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #aac951;
-  border-bottom: 3px solid #aac951;
+  border-top: 3px solid #62366c;
+  border-bottom: 3px solid #62366c;
   padding: 30px;
   background: #5F8D4E;
   width: 100%;
@@ -907,23 +907,23 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #aac951;
+  background: #62366c;
   color: #E5D9B6;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #aac951;
+  background: #62366c;
   color: #E5D9B6;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #aac951;
-  border-bottom: 3px solid #aac951;
+  border-top: 3px solid #62366c;
+  border-bottom: 3px solid #62366c;
   padding: 30px;
-  background: #5F8D4E;
+  background: #E5D9B6;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -934,7 +934,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #aac951;
+  background: #62366c;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -988,7 +988,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #aac951;
+  background: #62366c;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -997,7 +997,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #aac951;
+  background: #62366c;
 }
 
 @keyframes animate-loading {
@@ -1062,7 +1062,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #aac951;
+  background: #62366c;
   color: #E5D9B6;
   transition: 0.3s;
   border-radius: 4px;
@@ -1070,7 +1070,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #aac951;
+  background: #62366c;
 }
 
 #footer .footer-top {
@@ -1142,13 +1142,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #aac951;
+  color: #62366c;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #aac951;
+  background: #62366c;
   color: #E5D9B6;
   line-height: 1;
   padding: 8px 0;
@@ -1161,7 +1161,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #aac951;
+  background: #62366c;
   color: #E5D9B6;
   text-decoration: none;
 }
@@ -1179,7 +1179,7 @@ section {
 }
 
 #footer .credits a {
-  color: #aac951;
+  color: #62366c;
 }
 
 @media (max-width: 575px) {
@@ -1194,7 +1194,7 @@ section {
 }
 .button {
   display: inline-block;
-  background-color: #aac951; /* Ubah warna latar belakang sesuai keinginan Anda */
+  background-color: #62366c; /* Ubah warna latar belakang sesuai keinginan Anda */
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -1207,5 +1207,5 @@ section {
 }
 
 .button:hover {
-  background-color: #aac951; /* Ubah warna latar belakang saat dihover sesuai keinginan Anda */
+  background-color: #62366c; /* Ubah warna latar belakang saat dihover sesuai keinginan Anda */
 }
