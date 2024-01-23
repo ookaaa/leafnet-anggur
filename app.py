@@ -61,17 +61,17 @@ def apiDeteksi():
 
         # Mengubah label prediksi menjadi teks yang lebih deskriptif
         if hasil_prediksi == 'class_0':
-            hasil_prediksi = 'Scab'
-            keterangan_penyakit = 'Apple Scab (Embun Apel) adalah penyakit jamur yang umum pada buah apel. Gejalanya meliputi adanya bintik-bintik berwarna coklat kehitaman pada daun, buah, dan ranting apel. Bintik-bintik tersebut dapat membesar dan menggabung menjadi kerak-kerak kasar yang dapat mengganggu pertumbuhan dan perkembangan buah. Penyakit ini dapat menyebabkan penurunan kualitas buah dan rendahnya hasil panen jika tidak dikelola dengan baik.'
-        elif hasil_prediksi == 'class_1':
             hasil_prediksi = 'Black Rot'
-            keterangan_penyakit = 'Black Rot (Busuk Hitam) juga merupakan penyakit jamur yang mempengaruhi buah apel. Gejalanya meliputi bintik-bintik berwarna coklat kehitaman yang muncul pada buah dan daun. Bintik-bintik tersebut kemudian membesar dan menghasilkan area busuk berwarna hitam yang membusuk pada buah. Buah yang terinfeksi Black Rot umumnya menjadi lunak, berkerut, dan tidak layak untuk dikonsumsi. Penyakit ini dapat menyebar melalui spora jamur yang terbawa oleh air hujan atau angin.'
+            keterangan_penyakit = ' '
+        elif hasil_prediksi == 'class_1':
+            hasil_prediksi = 'ESCA'
+            keterangan_penyakit = ' '
         elif hasil_prediksi == 'class_2':
-            hasil_prediksi = 'Cedar Apple Rust'
-            keterangan_penyakit = 'Cedar Apple Rust (Karat Apel Cedar) adalah penyakit yang melibatkan dua inang, yaitu tanaman apel dan pohon cedar. Penyakit ini disebabkan oleh jamur yang menghasilkan bintik-bintik berwarna oranye-bisul pada daun dan buah apel. Pada pohon cedar, jamur tersebut menghasilkan gumpalan-gumpalan berwarna coklat kehitaman. Penyakit ini dapat mengurangi produksi buah apel dan menyebabkan kerugian ekonomi pada pertanian apel.'
+            hasil_prediksi = 'Healty'
+            keterangan_penyakit = ' '
         else:
-            hasil_prediksi = 'Healthy'
-            keterangan_penyakit = 'Healthy (Sehat) mengacu pada kondisi daun buah apel yang tidak terinfeksi oleh penyakit atau gangguan lainnya. Daun sehat umumnya memiliki warna hijau cerah, bebas dari bintik-bintik, kerak, atau tanda-tanda kerusakan lainnya. Daun yang sehat sangat penting untuk menjaga kesehatan dan produktivitas pohon apel.'
+            hasil_prediksi = 'Leaf Blight'
+            keterangan_penyakit = ' '
 
         # Menghapus file gambar temporary
         os.remove(file_path)
