@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>LeafNet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href={{ url_for('static', filename='/img/Apple_7.jpg') }} rel="icon">
+  <link href={{ url_for('static', filename='/img/apple-touch-icon.png') }} rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={{ url_for('static', filename='/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/boxicons/css/boxicons.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }} rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href={{ url_for('static', filename='/css/style.css') }} rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href={{ url_for('beranda') }}><span>LeafNet</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href={{ url_for('beranda') }}>Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="#services">Fitur</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Upload dan Prediksi Gambar</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+      <style>
+         /* CSS untuk tampilan form */
+         body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .disease-card {
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .disease-card .card-header {
+      background-color: #f8f9fa;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .disease-card .card-body p {
+      margin-bottom: 10px;
+    }
+
+    .disease-card.disease-detection .card-header {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+      .disease-card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Additional CSS for positioning the cards */
+    .col-md-6 {
+      padding: 10px;
+    }
+
+    .col-md-6:first-child {
+      order: 1;
+    }
+
+    .col-md-6:last-child {
+      order: 2;
+    }
+    #container {
+      margin: 50px auto;
+      width: 400px;
+      text-align: center;
+    }
+    #preview {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+    }
+    #prediksi_submit {
+      margin-top: 30px;
+      background-color: #ff3b30;
+      border-color: #ff3b30;
+    }
+    .custom-file-input::-webkit-file-upload-button {
+      background-color: #ff3b30;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border-color: #ff3b30;
+    }
+    .custom-file-input::-moz-file-upload-button {
+      background-color: #ff3b30;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border-color: #ff3b30;
+    }
+    .custom-file-input::before {
+      background-color: #ff3b30;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border-color: #ff3b30;
+    }
+        #prediksi_submit {
+          margin-top: 20px;
+    }
+  </style>
+  <title>Disease Information</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="container">
+          <h2>Silahkan Input Gambar</h2>
+          <form id="upload_form" enctype="multipart/form-data">
+            <div class="form-group">
+              <input type="file" id="input_gambar" accept=".jpg" onchange="previewImage(event)">
+            </div>
+            <div class="form-group">
+              <div id="preview"></div>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="prediksi_submit" class="btn btn-primary">Prediksi</button>
+            </div>
+          </form>
+          <div id="hasil_prediksi"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Black Rot (Busuk Hitam)
+            </div>
+            <div class="card-body">
+              <p>Black Rot juga merupakan penyakit jamur yang mempengaruhi buah anggur. Gejalanya meliputi bintik-bintik berwarna coklat kehitaman yang muncul pada buah dan daun. Bintik-bintik tersebut kemudian membesar dan menghasilkan area busuk berwarna hitam yang membusuk pada buah. Buah yang terinfeksi Black Rot umumnya menjadi lunak, berkerut, dan tidak layak untuk dikonsumsi. Penyakit ini dapat menyebar melalui spora jamur yang terbawa oleh air hujan atau angin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              ESCA (Ensefalopati Subkronis Abiotik)
+            </div>
+            <div class="card-body">
+              <p>ESCA adalah penyakit tanaman yang kompleks dan kompleks yang disebabkan oleh kombinasi faktor biotik dan abiotik. Penyakit ini dapat memengaruhi sistem vaskular tanaman, mengakibatkan gejala seperti perubahan warna dan nekrosis pada daun. Faktor abiotik yang berperan dalam ESCA termasuk stres lingkungan seperti kondisi cuaca yang tidak baik, pengelolaan tanaman yang buruk, atau masalah dalam keberlanjutan lingkungan pertanian.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Leaf Blight (Hawar Daun)
+            </div>
+            <div class="card-body">
+              <p>Leaf Blight (Hawar Daun) merupakan kondisi atau penyakit yang menyebabkan bercak, nekrosis, atau kematian pada daun tanaman. Penyakit ini dapat disebabkan oleh berbagai faktor, termasuk infeksi bakteri, jamur, virus, atau bahkan faktor lingkungan tertentu. Pencegahan dan pengendalian leaf blight melibatkan langkah-langkah seperti pemantauan tanaman secara rutin, penerapan praktik sanitasi yang baik, pengaturan kelembaban, dan jika perlu, penggunaan fungisida atau bahan pengendali penyakit lainnya.</p>
+            </div>
+          </div>
+        </div>
+        <div class="disease-card disease-detection">
+          <div class="card">
+            <div class="card-header">
+              Healthy (Sehat)
+            </div>
+            <div class="card-body">
+              <p>Healthy (sehat) mengacu pada kondisi daun buah anggur yang tidak terinfeksi oleh penyakit atau gangguan lainnya. Daun sehat umumnya memiliki warna hijau cerah, bebas dari bintik-bintik, kerak, atau tanda-tanda kerusakan lainnya. Daun yang sehat sangat penting untuk menjaga kesehatan dan produktivitas pohon anggur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+        
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>LeafNet</h3>
+            <p>
+              Jl. Khatib Sulaiman, Alai Parak Kopi<br>
+              Kec. Padang Utara<br>
+              Kota Padang, Sumatera Barat 25173<br><br>
+              <strong>Phone:</strong> +6287763908374<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fitur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Kami aktif di beberapa platform media sosial untuk memperluas jangkauan dan memperkenalkan LeafNet kepada lebih banyak orang. Anda dapat mengikuti kami di:</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LeafNet</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">@anggamalikahmad</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/aos/aos.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/php-email-form/validate.js') }}></script>
+
+  <!-- Template Main JS File -->
+  <script src={{ url_for('static', filename='/js/main.js') }}></script>
+
+</body>
+
+</html>

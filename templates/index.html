@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>LeafNet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href={{ url_for('static', filename='/img/Apple_7.jpg') }} rel="icon">
+  <link href={{ url_for('static', filename='/img/apple-touch-icon.png') }} rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={{ url_for('static', filename='/vendor/aos/aos.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/bootstrap/css/bootstrap.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/bootstrap-icons/bootstrap-icons.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/boxicons/css/boxicons.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/glightbox/css/glightbox.min.css') }} rel="stylesheet">
+  <link href={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.css') }} rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href={{ url_for('static', filename='/css/style.css') }} rel="stylesheet">
+
+
+</head>
+
+<body>
+
+ <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href={{ url_for('beranda') }}><span>LeafNet</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="#services">Fitur</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Segera Kenali Penyakit Daun pada Buah Anggur Anda dengan LeafNet: Solusi Deteksi Cepat dan Akurat</h1>
+          <div>
+            <a href={{ url_for('upload_page') }} class="btn-get-started scrollto">Mulai</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src={{ url_for('static', filename='/img/Grape Farmer.png') }} class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+<section id="about" class="about" style="background-color: #f5f5f5;">
+  <div class="container">
+
+    <div class="row justify-content-between">
+      <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+        <img src={{ url_for('static', filename='/img/Anggur.png') }} class="img-fluid" alt="" data-aos="zoom-in">
+      </div>
+      <div class="col-lg-6 pt-5 pt-lg-0">
+        <h3 data-aos="fade-up">LeafNet Teknologi AI untuk Pertanian yang Lebih Sehat dan Produktif</h3>
+        <p data-aos="fade-up" data-aos-delay="100" style="text-align:justify;">
+          LeafNet adalah sebuah aplikasi berbasis kecerdasan buatan (Artificial Intelligence) yang dikembangkan oleh para anak bangsa dengan tujuan untuk membantu para petani dalam mendeteksi penyakit pada daun buah anggur dengan lebih cepat dan efektif. Aplikasi ini menggunakan teknologi computer vision dan deep learning untuk menganalisis gambar daun buah anggur secara otomatis dan akurat.
+        </p>
+          <a href={{ url_for('inner_page') }} class="btn-get-started scrollto">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Fitur</h2>
+      </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Deteksi yang Akurat</a></h4>
+              <p class="description">Mendeteksi Penyakit Tanaman dengan Lebih Cepat dan Akurat dengan LeafNet</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Informasi dan Solusi</a></h4>
+              <p class="description">Temukan Informasi dan Solusi untuk Tanaman Anda dengan Mudah di LeafNet</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Kemudahan Penggunaan</a></h4>
+              <p class="description">Pengalaman Menggunakan LeafNet yang Mudah dan Intuitif untuk Semua Petani</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Pembaruan Terbaru</a></h4>
+              <p class="description">Dapatkan Pembaruan Terbaru tentang Tanaman Anda dengan LeafNet yang Selalu Terdepan</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Apa yang dimaksud dengan teknologi Artificial Intelligence pada aplikasi LeafNet? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Teknologi Artificial Intelligence pada aplikasi LeafNet digunakan untuk menganalisis gambar daun buah anggur secara otomatis dan akurat, sehingga dapat membantu para petani dalam mendeteksi penyakit pada tanaman.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Bagaimana cara menggunakan LeafNet? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Para petani dapat mengambil gambar daun buah anggur yang mencurigakan, lalu memuatnya ke dalam aplikasi LeafNet untuk dianalisis. Hasil analisis akan ditampilkan secara cepat dan akurat, sehingga para petani dapat segera mengambil tindakan yang diperlukan.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Apa saja penyakit pada daun buah apel yang dapat dideteksi oleh LeafNet? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                LeafNet dapat membantu mengidentifikasi berbagai penyakit pada daun buah anggur, seperti penyakit busuk hitam, ESCA, Hawar daun, dan lain sebagainya
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Apakah LeafNet hanya dapat digunakan untuk tanaman buah anggur saja? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Saat ini, LeafNet dikembangkan untuk digunakan pada tanaman buah anggur, namun kami berencana untuk mengembangkan aplikasi serupa untuk tanaman lain di masa depan.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Apakah LeafNet dapat digunakan secara gratis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                LeafNet dapat diunduh secara gratis, namun beberapa fitur yang akan dikembangkan kedepannya mungkin memerlukan biaya tambahan.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Apakah LeafNet tersedia dalam bahasa Indonesia? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Ya, LeafNet tersedia dalam bahasa Indonesia untuk memudahkan para petani lokal dalam menggunakannya.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>TEAMS</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <!--<img src={{ url_for('static', filename='/img/team/Okamisar.jpg') }} class="img-fluid" alt="">-->
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Okamisar</h4>
+                  <span>Machine Learning Engineer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/okamisar/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/okamisar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member">
+              <!--<img src={{ url_for('static', filename='/img/team/Maulidya.jpg') }} class="img-fluid" alt="">-->
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Yasmin</h4>
+                  <span>Data Acquisitor</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/d/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/ma/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <!--<img src={{ url_for('static', filename='/img/team/Angga.jpg') }} class="img-fluid" alt="">-->
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>John</h4>
+                  <span>Front End & Back End</span>
+                </div>
+                <div class="social">
+                  <a href="https://twitter.com/an" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/ang/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <!--<img src={{ url_for('static', filename='/img/team/Viorryn.jpg') }} class="img-fluid" alt="">-->
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Olivia</h4>
+                  <span>Data Scientist</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/or/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clients</h2>
+        </div>
+
+        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-1.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-2.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-3.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-4.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-5.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-6.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-7.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-8.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-9.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-10.png') }} class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src={{ url_for('static', filename='/img/clients/client-11.png') }} class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact" style="background-color: #f5f5f5;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Jl. Khatib Sulaiman, Alai Parak Kopi, Kec. Padang Utara, Kota Padang, Sumatera Barat 25173</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+6287763908374</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.6489576105191!2d100.36125037268604!3d-0.9254150796141748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8d98d2319f3%3A0xebfa8823349070d3!2sMasjid%20Raya%20Sumatera%20Barat!5e0!3m2!1sid!2sid!4v1683890312151!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <form action="">
+                  <button type="submit" onclick="">Send Message</button>
+                </form>
+              </div>
+              
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4> 
+            <p style="text-align:justify;">Anda ingin tetap terhubung dengan LeafNet dan mendapatkan pembaruan terbaru tentang aplikasi, artikel tentang pertanian, dan tips tentang perawatan tanaman? Berlangganan newsletter kami!</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>LeafNet</h3>
+            <p>
+              Jl. Khatib Sulaiman, Alai Parak Kopi<br>
+              Kec. Padang Utara<br>
+              Kota Padang, Sumatera Barat 25173<br><br>
+              <strong>Phone:</strong> +6287763908374<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Kami aktif di beberapa platform media sosial untuk memperluas jangkauan dan memperkenalkan LeafNet kepada lebih banyak orang. Anda dapat mengikuti kami di:</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LeafNet</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="https://www.instagram.com/okamisar/">@okamisar</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src={{ url_for('static', filename='/vendor/aos/aos.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/glightbox/js/glightbox.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/swiper/swiper-bundle.min.js') }}></script>
+  <script src={{ url_for('static', filename='/vendor/php-email-form/validate.js') }}></script>
+
+  <!-- Template Main JS File -->
+  <script src={{ url_for('static', filename='/js/main.js') }}></script>
+
+</body>
+
+</html>
