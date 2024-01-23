@@ -849,14 +849,14 @@ section {
   border-top: 3px solid #62366c;
   border-bottom: 3px solid #62366c;
   padding: 30px;
-  background: #5F8D4E;
+  background: #E5D9B6;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #5F8D4E;
+  color: #62366c;
   float: left;
   width: 44px;
   height: 44px;
