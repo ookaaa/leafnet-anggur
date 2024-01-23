@@ -1,8 +1,9 @@
 import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Activation, Dropout,LeakyReLU
-from tensorflow.keras.applications import MobileNet
-from tensorflow.keras.layers import GlobalAveragePooling2D
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Activation, Dropout,LeakyReLU
+from keras.applications import MobileNet
+from keras.layers import GlobalAveragePooling2D
 
 def make_model():
     mobilenet = MobileNet(input_shape=(224 , 224, 3),
