@@ -53,16 +53,11 @@ def apiDeteksi():
         prediksi = model.predict(image)
         class_index = np.argmax(prediksi)
 
-        # Kamus kelas dan label yang lebih deskriptif
-        class_mapping = {
-            0: 'Black Rot',
-            1: 'ESCA',
-            2: 'Healty', 
-            3: 'Leaf Blight'
-        }
+        # Daftar kelas
+        classes = ['class_0', 'class_1', 'class_2', 'class_3']
 
-        # Mengambil label prediksi dari kamus
-        hasil_prediksi = class_mapping[class_index]
+        # Mengambil label prediksi
+        hasil_prediksi = classes[class_index]
 
         # Mengubah label prediksi menjadi teks yang lebih deskriptif
         if hasil_prediksi == 'class_0':
@@ -76,7 +71,7 @@ def apiDeteksi():
             keterangan_penyakit = ' '
         else:
             hasil_prediksi = 'Leaf Blight'
-            keterangan_penyakit = ' '
+            keterangan_penyakit = ''
 
         # Menghapus file gambar temporary
         os.remove(file_path)
